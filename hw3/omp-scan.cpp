@@ -54,8 +54,8 @@ void scan_omp(long* prefix_sum, const long* A, long n, long* T, int nthr) {
 
 int main() {
 
-  long nthr[4] = {10, 100, 1000};
-  for (long i=0; i<4; i++)
+  long nthr[3] = {10, 100, 1000};
+  for (long i=0; i<3; i++)
   {
   printf("\n");
   std::cout << "Number of threads = " << nthr[i] << std::endl;
