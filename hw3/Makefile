@@ -13,3 +13,4 @@ omp-scan:omp-scan.cpp
 
 jacobi2D-omp:jacobi2D-omp.cpp
         $(CXX) $(CXXFLAGS) $^ && ./a.out
+        .
