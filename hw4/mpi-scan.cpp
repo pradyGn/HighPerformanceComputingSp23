@@ -37,7 +37,7 @@ float * add_offset(float *array, int num_elements, float *offset, int rank){
 
 }
 
-nt main(int argc, char** argv) {
+int main(int argc, char** argv) {
   if (argc != 2) {
     fprintf(stderr, "Usage: avg num_elements_per_proc\n");
     exit(1);
