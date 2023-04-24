@@ -10,7 +10,7 @@ int_ring:int_ring.cpp
 	$(INIT) && $(CXX) $(CXXFLAGS) $< $(LIBS) -o $@ && mpirun -np $(PROCESSES) $@
 
 int_ring_arr:int_ring_arr.cpp
-	$(CXX) $(CXXFLAGS) $< $(LIBS) -o $@ && mpirun -np $(PROCESSES) $@
+	$(INIT) && $(CXX) $(CXXFLAGS) $< $(LIBS) -o $@ && mpirun -np $(PROCESSES) $@
 
 mpi-scan:mpi-scan.cpp
-	$(CXX) $(CXXFLAGS) $< $(LIBS) -o $@ && mpirun -np $(PROCESSES) $@ 2
+	$(INIT) && $(CXX) $(CXXFLAGS) $< $(LIBS) -o $@ && mpirun -np $(PROCESSES) $@ 2
