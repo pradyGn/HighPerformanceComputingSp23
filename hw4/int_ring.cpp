@@ -35,3 +35,4 @@ int main(int argc, char** argv) {
   printf("Latency: %e ms\n",tt/N * 1e3);
   printf("Bandwidth: %e GB/s\n", (1e6*N)/tt/1e9);}
   MPI_Finalize();
+}
